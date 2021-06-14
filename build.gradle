@@ -20,7 +20,14 @@ allprojects {
         google()
         jcenter()
         mavenCentral()
-        maven {  url "https://dl.bintray.com/surepassio/esign-android-sdk" }
+        maven {
+            url "https://maven.pkg.github.com/surepassio/capture-android-sdk-sample-app"
+            credentials {
+                username = "USER_NAME"
+                password = "PAT_TOKEN"//https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token
+                // (Allow Package Read and Write Permission)
+            }
+        }
     }
 }
 
