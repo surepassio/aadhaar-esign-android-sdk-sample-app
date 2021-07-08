@@ -27,7 +27,7 @@ allprojects {
 
 ```
 dependencies {
-    implementation "io.surepass.sdk:esign-android-sdk:2.0.0"
+    implementation "io.surepass.sdk:esign-android-sdk:2.0.4"
 }
 ```
 
