@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     fun startEsignProcess(){
 
-        val token = "Bearer TOKEN"
+        val token = "TOKEN"
         val fullVerificationIntent = Intent(this, InitSDK::class.java)
 
         fullVerificationIntent.putExtra("token", token)
