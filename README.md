@@ -11,7 +11,7 @@ allprojects {
         jcenter()
         mavenCentral()
         maven {
-            url "https://maven.pkg.github.com/surepassio/capture-android-sdk-sample-app"
+            url "https://maven.pkg.github.com/surepassio/aadhaar-esign-android-sdk-sample-app"
             credentials {
                 username = "USER_NAME"
                 password = "PAT_TOKEN"//https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token
@@ -27,7 +27,7 @@ allprojects {
 
 ```
 dependencies {
-    implementation "io.surepass.sdk:esign-android-sdk:2.0.4"
+    implementation "io.surepass.sdk:esign-android-sdk:2.1.3"
 }
 ```
 
@@ -37,7 +37,7 @@ dependencies {
 import com.surepass.surepassesign.InitSDK
     fun startEsignProcess(){
 
-        val token = "Bearer TOKEN” // Token received from the Initialize API
+        val token = "TOKEN” // Token received from the Initialize API
         val fullVerificationIntent = Intent(this, InitSDK::class.java)
 
         fullVerificationIntent.putExtra("token", token)
